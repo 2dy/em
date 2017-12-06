@@ -1,3 +1,5 @@
 [user]
 	name = 2dy
 	email = ldy1909@naver.com
+[core]
+	editor = nano

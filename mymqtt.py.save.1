@@ -1,0 +1,54 @@
+#include <user_config.h>
+#include <SmingCore/SmingCore.h>
+#include <Libraries/Adafruit_SSD1306/Adafruit_SSD1306.h>
+#include <Libraries/DHT/DHT.h>
+
+Adafruit_SSD1306 display(4);
+DHT dht(14);
+
+void startMqttClient();
+void onMessageReceived(String topic, String message);
+void displayTemp(String s_temp);
+void displayText(String s_msg);
+
+Timer procTimer;
+
+MqttClient mqtt("your_mqtt_server.com", 1883, onMessageReceived);
+
+void publishMessage()
+{
+	if (mqtt.getConnectionState() != eTCS_Connected) 
+	{
+		startMqttClient(); // Auto reconnect
+		return;
+	}
+
+TempAndHumidity th;
+	if(!dht.readTempAndHumidity(th)) {
+		return;
+	}
+
+	String message = "T=";
+	message += th.temp;
+	message += ", H=";
+	message += th.humid;
+
+	Serial.println("Let's publish message now!");
+
+mqtt.publish("your_topic", message); // or publishWithQoS
+
+	displayTemp(message);
+}
+
+void onMessageReceived(String topic, String message)
+{
+	Serial.print(topic);
+	Serial.print(":\r\n\t"); // Prettify alignment for printing
+	Serial.println(message);void onMessageReceived(String topic, String message)
+{
+	Serial.print(topic);
+	Serial.print(":\r\n\t"); // Prettify alignment for printing
+	Serial.println(message);
+
+
+
