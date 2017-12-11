@@ -98,16 +98,16 @@ xprop:  no such property "_NET_DESKTOP_NAMES"
 ** Message: app.vala:76: Launching lxpanel 
 ** Message: app.vala:76: Launching pcmanfm 
 
-** (lxsession:579): WARNING **: app.vala:86: Failed to execute child process "xscreensaver" (No such file or directory)
+** (lxsession:577): WARNING **: app.vala:86: Failed to execute child process "xscreensaver" (No such file or directory)
 
-** (lxsession:579): WARNING **: app.vala:87: Error when launching xscreensaver
+** (lxsession:577): WARNING **: app.vala:87: Error when launching xscreensaver
 ** Message: app.vala:76: Launching point-rpi 
 ** Message: options.vala:107: Create build-in Clipboard
 ** Message: main.vala:442: Check keymap_mode (null)
 ** Message: app.vala:76: Launching /usr/bin/ssh-agent 
-SSH_AUTH_SOCK=/tmp/ssh-0ZDxAJdcU8Mz/agent.773; export SSH_AUTH_SOCK;
-SSH_AGENT_PID=775; export SSH_AGENT_PID;
-echo Agent pid 775;
+SSH_AUTH_SOCK=/tmp/ssh-pNCUvPQWP20A/agent.770; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=772; export SSH_AGENT_PID;
+echo Agent pid 772;
 ** Message: app.vala:130: point-rpi exit with this type of exit: 0
 ** Message: app.vala:139: Exit normal, don't reload
 ** Message: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
@@ -117,7 +117,9 @@ Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.
 ** Message: Connecting ...
 ** Message: Status changed to down
 
-** (lxpanel:766): CRITICAL **: dhcpcd_open: Inappropriate ioctl for device
+** (lxpanel:764): CRITICAL **: dhcpcd_open: Inappropriate ioctl for device
+
+** (zenity:783): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
 ** Message: Status changed to opened
 ** Message: Connected to dhcpcd-6.10.1
 ** Message: Status changed to connected
@@ -129,10 +131,19 @@ Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.
 ** Message: bt: Name org.bluez owned on DBus
 ** Message: bt: New agent manager found
 ** Message: bt: New adapter found
-
-** (zenity:781): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
 ** Message: va: Name org.bluez owned on DBus
 Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
+** Message: wlan0: Received scan results
 ** Message: wlan0: Received scan results
 ** Message: wlan0: Received scan results
 ** Message: wlan0: Received scan results

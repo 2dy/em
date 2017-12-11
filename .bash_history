@@ -148,3 +148,27 @@ sudo shutdown
 sudo shutdown -c
 shutdown -c
 sudo shutdown -h now
+nano ttest.py
+cd sys/bus/w1/devices
+/sys/bus/w1/
+cd sys
+cd /sys/bus/w1/devices/
+ls
+cd
+nano ttest.py
+python ttest.py
+ls
+nano datasender.py
+python datasender.py
+import paho
+nano datasender.py
+import paho
+python datasender.py
+nano datasender.py
+python datasender.py
+git init
+git add .
+git commit -m "second commit"
+git push -u origin master
+sudo shutdonw -n
+sudo shutdown -h now
