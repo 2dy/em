@@ -172,3 +172,31 @@ git commit -m "second commit"
 git push -u origin master
 sudo shutdonw -n
 sudo shutdown -h now
+ls
+python datasender
+python datasender.p
+python datasender.py
+nano datatogit.py
+nano datasender.py
+nano datatogit.py
+python datasender.py
+python datatogit.py
+sudo pip install git+https://github.com/relayr/pythonsdk
+sudo pip install relayr upgrade
+git init
+git remote add .
+git add .
+git commit -m "third commit"
+git push -u origin master
+sudo pip install git+https://github.com/relayr/pythonsdk
+sudo apt-get update
+sudo apt-get install python-dev libffi-dev libssl-dev
+pip install git+https://github.com/relayr/python-sdk
+python datatogit.py
+python datasender.py
+python datatogit.py
+nano datatogit.py
+python datasender.py
+sudo shutdown -h now
+ping 8.8.8.8
+sudo shutdown -h now
